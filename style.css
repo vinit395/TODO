@@ -56,15 +56,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 480px) {
-  .inputBox,
-  .selectionBox {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
 .selectionBox {
   width: 30%;
   display: flex;
@@ -97,11 +88,6 @@ h1 {
   border: none;
   width: 65%;
   outline: none;
-}
-@media (max-width: 480px) {
-  #input-box {
-    width: auto;
-  }
 }
 
 #add-task-btn {
@@ -166,4 +152,21 @@ li button {
 
 li button:hover {
   background-color: #d42121;
+}
+
+@media (max-width: 480px) {
+  .inputBox,
+  .selectionBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  #input-box {
+    width: auto;
+  }
 }
