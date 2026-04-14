@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo Webapp</title>
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div><a href="index.html">ToDo</a></div>
+      <div><a href="Notes.html">Notes</a></div>
+      <div><a href="calender.html">Calender</a></div>
+    </header> -->
+    <div class="flex-container">
+      <div class="container">
+        <h1>To-Do list</h1>
+        <div class="input-container">
+          <div class="inputBox">
+            <input type="text" placeholder="Add new Task..." id="input-box" />
+            <button id="add-task-btn">Add Task</button>
+          </div>
+          <div class="selectionBox">
+            <!-- <label for="priority">Priority</label> -->
+            <h4>Priority</h4>
+            <select id="priority">
+              <option value="default">Default</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+        </div>
+        <div class="infoBox">
+          <span>Task Name</span>
+          <span>Priority</span>
+          <span>Action</span>
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
